@@ -1,0 +1,108 @@
+body {
+  background-color: #2c2c2c;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Mayor separación entre los elementos */
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #3a3a3a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.card h2 {
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  padding: 10px 0; /* Espacio entre cada estado de cuenta */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+.pagado {
+  color: green;
+}
+
+.pendiente {
+  color: red;
+}
+
+.emergencia {
+  background-color: #b30000;
+  text-align: center;
+}
+
+/* Estilos específicos para el formulario */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px; /* Más espacio entre los campos */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px; /* Espacio extra entre los inputs y el botón */
+}
+
+button:hover {
+  background-color: gray;
+}
