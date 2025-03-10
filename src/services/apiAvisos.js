@@ -1,4 +1,3 @@
-// Simulación de una API de avisos
 export const enviarAviso = (aviso) => {
     return new Promise((resolve) => {
       setTimeout(() => {

@@ -1,4 +1,3 @@
-// Simulación de una API para votaciones
 let votaciones = [
     {
       id: 1,

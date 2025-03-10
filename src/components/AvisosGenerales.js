@@ -6,7 +6,7 @@ const AvisosGenerales = ({ agregarNotificacion }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (aviso.trim()) {
-      agregarNotificacion(aviso); // Envía el aviso como notificación
+      agregarNotificacion(aviso); 
       setAviso('');
     }
   };
@@ -19,7 +19,7 @@ const AvisosGenerales = ({ agregarNotificacion }) => {
           value={aviso}
           onChange={(e) => setAviso(e.target.value)}
           placeholder="Escribe un aviso..."
-          rows="6" // Ajustamos el número de filas
+          rows="6" 
           required
         />
         <button type="submit">Enviar</button>

@@ -9,13 +9,12 @@ const EncuestasVotaciones = () => {
   const [votacionSeleccionada, setVotacionSeleccionada] = useState(null);
   const [opcionSeleccionada, setOpcionSeleccionada] = useState('');
   const [resultados, setResultados] = useState({});
-  const [yaVoto, setYaVoto] = useState(false); // Estado para rastrear si el usuario ya votó
+  const [yaVoto, setYaVoto] = useState(false); 
 
   useEffect(() => {
     obtenerVotaciones().then((data) => setVotaciones(data));
   }, []);
 
-  // Verificar si el usuario ya votó en la votación seleccionada
   useEffect(() => {
     if (votacionSeleccionada) {
       const votacionesVotadas = JSON.parse(localStorage.getItem('votacionesVotadas')) || [];
@@ -32,14 +31,13 @@ const EncuestasVotaciones = () => {
     if (respuesta.success) {
       setResultados(respuesta.resultados);
 
-      // Marcar que el usuario ya votó en esta votación
       const votacionesVotadas = JSON.parse(localStorage.getItem('votacionesVotadas')) || [];
       if (!votacionesVotadas.includes(votacionSeleccionada.id)) {
         votacionesVotadas.push(votacionSeleccionada.id);
         localStorage.setItem('votacionesVotadas', JSON.stringify(votacionesVotadas));
       }
 
-      setYaVoto(true); // Actualizar el estado local
+      setYaVoto(true);
       alert('¡Voto registrado!');
     } else {
       alert('Error al votar. Inténtalo de nuevo.');
@@ -48,8 +46,8 @@ const EncuestasVotaciones = () => {
 
   const handleParticipar = (votacion) => {
     setVotacionSeleccionada(votacion);
-    setResultados(votacion.resultados); // Mostrar resultados actuales
-    setOpcionSeleccionada(''); // Reiniciar la opción seleccionada
+    setResultados(votacion.resultados); 
+    setOpcionSeleccionada(''); 
   };
 
   const data = {
@@ -97,7 +95,7 @@ const EncuestasVotaciones = () => {
             <select
               value={opcionSeleccionada}
               onChange={(e) => setOpcionSeleccionada(e.target.value)}
-              disabled={yaVoto} // Deshabilitar si ya votó
+              disabled={yaVoto}
             >
               <option value="">Selecciona una opción</option>
               {votacionSeleccionada.opciones.map((opcion, index) => (

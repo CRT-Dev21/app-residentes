@@ -38,7 +38,7 @@ const ReportesIncidencias = () => {
             placeholder="Descripción de la incidencia"
             value={incidencia.descripcion}
             onChange={handleChange}
-            rows="5" // Ajusta el número de filas
+            rows="5"
             required
           />
         </div>
