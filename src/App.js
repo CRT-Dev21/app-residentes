@@ -98,7 +98,6 @@ function App() {
         <PagosOnline />
         <ReportesFinancieros />
         {esAdmin && <AvisosGenerales agregarNotificacion={agregarNotificacion} />}
-        <ReportesIncidencias />
         <EncuestasVotaciones />
         <BotonEmergencia />
       </div>

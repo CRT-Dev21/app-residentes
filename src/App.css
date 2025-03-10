@@ -48,11 +48,12 @@ textarea {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px; 
+  gap: 30px;
   width: 100%;
   justify-content: center;
   margin-top: 20px;
 }
+
 
 .card {
   background-color: #3a3a3a;
