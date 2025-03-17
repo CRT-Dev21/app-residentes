@@ -16,7 +16,7 @@
   - Avisos Generales (Mercedes).
   - Reportes de Incidencias (Mercedes).
 
-# Sprint 3 (En Progreso)
+# Sprint 3 (Completado)
 - **Objetivo**: Implementar sistema de votaciones y encuestas.
 - **Tareas**:
   - Encuestas y Votaciones (César).
