@@ -10,4 +10,4 @@
 |2.2  | Avisos Generales                     | 2      | Alta      | Mercedes        | Hecho    |
 |3.1  | Botón de Emergencia                  | 1      | Alta      | César           | Hecho    |
 |4.1  | Reportes de Incidencias              | 2      | Alta      | Mercedes        | Hecho    |
-|5.1  | Encuestas y Votaciones               | 3      | Media     | César           | Pendiente|
+|5.1  | Encuestas y Votaciones               | 3      | Media     | César           | Hecho    |
