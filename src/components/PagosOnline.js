@@ -20,13 +20,11 @@ const PagosOnline = () => {
   const validarFormulario = () => {
     const nuevosErrores = {};
 
-    // Validar fecha de expiración (MM/AA)
     const fechaRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
     if (!fechaRegex.test(formData.fechaExpiracion)) {
       nuevosErrores.fechaExpiracion = 'Formato inválido (MM/AA)';
     }
 
-    // Validar CVV (3 o 4 dígitos)
     const cvvRegex = /^\d{3,4}$/;
     if (!cvvRegex.test(formData.cvv)) {
       nuevosErrores.cvv = 'CVV inválido (3 o 4 dígitos)';
