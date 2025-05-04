@@ -2,7 +2,7 @@ import React from 'react';
 
 const BotonEmergencia = () => {
   const handleEmergencia = () => {
-    alert('¡Alerta enviada a la mesa directiva y autoridades!');
+    alert('¡Alerta de emergencia enviada!');
   };
 
   return (

@@ -91,12 +91,13 @@ function App() {
         </div>
       )}
 
-      <div className="grid-container">
+<div className="grid-container">
         <EstadoCuenta />
         <RegistroPagos />
         <Notificaciones notificaciones={notificaciones} />
         <PagosOnline />
         <ReportesFinancieros />
+        <ReportesIncidencias />
         {esAdmin && <AvisosGenerales agregarNotificacion={agregarNotificacion} />}
         <EncuestasVotaciones />
         <BotonEmergencia />
